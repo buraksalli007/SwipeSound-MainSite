@@ -58,10 +58,10 @@ export default function FAQ() {
                 For partnership, press inquiries, or feedback, contact us at:
               </p>
               <a
-                href="mailto:hello@swipesound.co.uk"
+                href="mailto:contact@swipesound.co.uk"
                 className="text-teal-400 hover:text-teal-300 font-medium break-all"
               >
-                hello@swipesound.co.uk
+                contact@swipesound.co.uk
               </a>
               <p className="text-sm text-gray-400 mt-6">
                 We try to respond within a few days.

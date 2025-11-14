@@ -7,11 +7,27 @@ export const pricingPlans = [
     features: [
       "Limited daily swipes",
       "Clean up a portion of your library",
-      "Basic filters and simple sessions",
+      "Basic filters (mood, genre)",
       "One playlist at a time",
+      "Ads supported",
     ],
     cta: "Start with Free",
     ctaDisabled: true,
+    highlight: false,
+  },
+  {
+    name: "Plus",
+    price: "TBD",
+    description: "For regular users",
+    features: [
+      "More daily swipes",
+      "Advanced filters (energy, release date)",
+      "Multiple playlists",
+      "Reduced ads",
+      "Priority support",
+    ],
+    cta: "Join Plus waitlist",
+    ctaDisabled: false,
     highlight: false,
   },
   {
@@ -20,48 +36,49 @@ export const pricingPlans = [
     description: "Recommended for heavy users",
     features: [
       "Unlimited swipes",
-      "Multiple playlists (Gym / Study / Driving / etc.)",
-      "Auto-clean rules and finer control",
-      "Priority for new features and improvements",
-      "Advanced filtering options",
+      "All filters unlocked",
+      "Unlimited playlists",
+      "No ads",
+      "Auto-clean rules",
+      "Priority for new features",
     ],
     cta: "Join Pro waitlist",
     ctaDisabled: false,
     highlight: true,
-  },
-  {
-    name: "Studio",
-    price: "TBD",
-    description: "For power users and creators",
-    features: [
-      "Everything in Pro",
-      "Multiple accounts / profiles (future feature)",
-      "Advanced rules and bulk operations",
-      "Priority support",
-      "Early access to new features",
-    ],
-    cta: "Join early interest list",
-    ctaDisabled: false,
-    highlight: false,
   },
 ];
 
 // FAQ data
 export const faqItems = [
   {
+    question: "How does SwipeSound connect to my music?",
+    answer:
+      "SwipeSound uses official APIs from Spotify and Apple Music. You'll authenticate through your music provider's secure OAuth flow—we never see or store your password. We only access your liked songs and playlist metadata to help you organize them.",
+  },
+  {
+    question: "Does SwipeSound change my existing playlists?",
+    answer:
+      "No, SwipeSound never modifies your existing playlists without your explicit action. When you swipe left to remove a song, it only removes it from your 'Liked Songs' or the playlist you're reviewing. Your original playlists remain untouched unless you choose to clean them.",
+  },
+  {
+    question: "Which platforms are supported?",
+    answer:
+      "We're launching with Spotify support first, followed by Apple Music. Additional platforms may be added based on user demand and API availability. Join the waitlist to stay updated on platform support.",
+  },
+  {
+    question: "Is there a free version?",
+    answer:
+      "Yes! SwipeSound offers a free tier with basic features including limited daily swipes, basic filters, and the ability to create one playlist at a time. Plus and Pro tiers unlock more features like unlimited swipes, advanced filters, and no ads.",
+  },
+  {
     question: "Is SwipeSound safe for my account?",
     answer:
-      "Yes, absolutely. SwipeSound uses official APIs and secure authentication flows provided by music platforms. We never store your passwords and only access the necessary data like your liked songs and playlist metadata. All authentication is handled securely through the music provider's official systems.",
+      "Absolutely. SwipeSound uses official APIs and secure authentication flows provided by music platforms. We never store passwords and only access necessary data like your liked songs and playlist metadata. All authentication is handled securely through your music provider's official systems.",
   },
   {
     question: "Do you store my passwords or payment info?",
     answer:
-      "No, never. Authentication is handled entirely by your music provider (Spotify, Apple Music, etc.) using OAuth. We don't have access to your passwords. Payment information will be handled through App Store mechanisms, so we never see or store any payment details.",
-  },
-  {
-    question: "Which regions will be supported?",
-    answer:
-      "We're initially focusing on major markets, but our goal is to support as many regions as the App Store and music providers allow. We'll expand availability based on demand and platform support.",
+      "No, never. Authentication is handled entirely by your music provider using OAuth. We don't have access to your passwords. Payment information is handled through App Store mechanisms, so we never see or store any payment details.",
   },
   {
     question: "When will SwipeSound be available on the App Store?",
@@ -69,14 +86,9 @@ export const faqItems = [
       "Exact dates aren't fixed yet, but our roadmap is: private beta → public TestFlight → App Store launch. Join the waitlist to be notified when we move to each phase.",
   },
   {
-    question: "Will there be a free version?",
+    question: "Can I filter songs by mood or energy level?",
     answer:
-      "Yes! We'll offer a free tier with limited functionality so you can try SwipeSound. Pro and Studio tiers will unlock more features like unlimited swipes, multiple playlists, and advanced controls.",
-  },
-  {
-    question: "Which music platforms will be supported?",
-    answer:
-      "We're starting with Spotify and Apple Music support. Additional platforms may be added based on user demand and API availability. Join the waitlist to stay updated on platform support.",
+      "Yes! SwipeSound offers smart filtering options including mood, genre, energy level, release date, and more. Basic filters are available in the free tier, while Plus and Pro tiers unlock advanced filtering capabilities.",
   },
 ];
 

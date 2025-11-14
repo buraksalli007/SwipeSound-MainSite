@@ -38,13 +38,13 @@ export default function Hero() {
                 onClick={() => scrollToSection("launch")}
                 className="px-8 py-4 rounded-full bg-gradient-to-r from-teal-500 to-blue-600 text-white font-semibold hover:from-teal-600 hover:to-blue-700 transition-all shadow-lg shadow-teal-500/25"
               >
-                Join beta waitlist
+                Join the Waitlist
               </button>
               <button
-                onClick={() => scrollToSection("about")}
+                onClick={() => scrollToSection("features")}
                 className="px-8 py-4 rounded-full border border-gray-600 text-white font-semibold hover:bg-white/5 transition-all"
               >
-                How the app works
+                Learn More
               </button>
             </div>
 
