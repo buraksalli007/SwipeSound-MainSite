@@ -28,18 +28,27 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Hide Vercel branding */
+/* Hide Vercel branding - Comprehensive */
 footer a[href*="vercel.com"],
 footer a[href*="vercel"],
 footer img[alt*="Vercel"],
 footer img[alt*="vercel"],
 [data-vercel-badge],
 [class*="vercel"],
-[class*="Vercel"] {
+[class*="Vercel"],
+iframe[src*="vercel"],
+script[src*="vercel.live"],
+script[src*="vercel.com"],
+#__vercel,
+[id*="vercel"],
+[data-vercel],
+a[href*="vercel"] {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
   height: 0 !important;
   width: 0 !important;
   overflow: hidden !important;
+  position: absolute !important;
+  left: -9999px !important;
 }

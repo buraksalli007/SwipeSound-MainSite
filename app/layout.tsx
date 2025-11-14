@@ -25,6 +25,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Block Vercel toolbar script from loading */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                // Prevent Vercel toolbar script
+                const originalAppendChild = Node.prototype.appendChild;
+                Node.prototype.appendChild = function(child) {
+                  if (child && child.src && (child.src.includes('vercel.live') || child.src.includes('vercel.com'))) {
+                    return child;
+                  }
+                  return originalAppendChild.call(this, child);
+                };
+              })();
+            `,
+          }}
+        />
+      </head>
       <body
         className={`${inter.variable} font-sans antialiased`}
       >
