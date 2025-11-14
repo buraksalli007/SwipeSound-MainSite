@@ -22,7 +22,7 @@ export default function Launch() {
   };
 
   return (
-    <section id="launch" className="py-24 px-4 sm:px-6 lg:px-8">
+    <section id="launch" className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-900/20 via-orange-800/15 to-orange-900/20">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -38,7 +38,7 @@ export default function Launch() {
         <div className="mb-16 space-y-8">
           <div className="flex gap-6">
             <div className="flex-shrink-0">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-teal-500 to-blue-600 flex items-center justify-center text-white font-bold">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 flex items-center justify-center text-white font-bold">
                 1
               </div>
             </div>
@@ -54,7 +54,7 @@ export default function Launch() {
 
           <div className="flex gap-6">
             <div className="flex-shrink-0">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-teal-500 to-blue-600 flex items-center justify-center text-white font-bold">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 flex items-center justify-center text-white font-bold">
                 2
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function Launch() {
 
           <div className="flex gap-6">
             <div className="flex-shrink-0">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-teal-500 to-blue-600 flex items-center justify-center text-white font-bold">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 flex items-center justify-center text-white font-bold">
                 3
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function Launch() {
         </div>
 
         {/* Waitlist Form */}
-        <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700">
+        <div className="bg-gradient-to-br from-orange-900/40 to-orange-800/30 rounded-2xl p-8 border border-orange-500/20">
           <h3 className="text-2xl font-semibold text-white mb-6 text-center">
             Join beta waitlist
           </h3>
@@ -118,7 +118,7 @@ export default function Launch() {
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
                   }
-                  className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-600 text-white placeholder-gray-500 focus:outline-none focus:border-teal-500"
+                  className="w-full px-4 py-3 rounded-lg bg-orange-900/30 border border-orange-500/30 text-white placeholder-orange-300/50 focus:outline-none focus:border-orange-500"
                   placeholder="Your name"
                 />
               </div>
@@ -138,7 +138,7 @@ export default function Launch() {
                   onChange={(e) =>
                     setFormData({ ...formData, email: e.target.value })
                   }
-                  className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-600 text-white placeholder-gray-500 focus:outline-none focus:border-teal-500"
+                  className="w-full px-4 py-3 rounded-lg bg-orange-900/30 border border-orange-500/30 text-white placeholder-orange-300/50 focus:outline-none focus:border-orange-500"
                   placeholder="your@email.com"
                 />
               </div>
@@ -167,7 +167,7 @@ export default function Launch() {
 
               <button
                 type="submit"
-                className="w-full px-8 py-4 rounded-full bg-gradient-to-r from-teal-500 to-blue-600 text-white font-semibold hover:from-teal-600 hover:to-blue-700 transition-all shadow-lg shadow-teal-500/25"
+                className="w-full px-8 py-4 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold hover:from-orange-600 hover:to-orange-700 transition-all shadow-lg shadow-orange-500/25"
               >
                 Join waitlist
               </button>

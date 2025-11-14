@@ -1,6 +1,6 @@
 export default function Testimonials() {
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-900/50">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-950/30 via-orange-900/20 to-orange-950/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -12,7 +12,7 @@ export default function Testimonials() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700">
+          <div className="bg-gradient-to-br from-orange-900/40 to-orange-800/30 rounded-2xl p-8 border border-orange-500/20">
             <div className="mb-4">
               <div className="flex gap-1 mb-2">
                 {[...Array(5)].map((_, i) => (
@@ -28,7 +28,7 @@ export default function Testimonials() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700">
+          <div className="bg-gradient-to-br from-orange-900/40 to-orange-800/30 rounded-2xl p-8 border border-orange-500/20">
             <div className="mb-4">
               <div className="flex gap-1 mb-2">
                 {[...Array(5)].map((_, i) => (
@@ -44,7 +44,7 @@ export default function Testimonials() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700">
+          <div className="bg-gradient-to-br from-orange-900/40 to-orange-800/30 rounded-2xl p-8 border border-orange-500/20">
             <div className="mb-4">
               <div className="flex gap-1 mb-2">
                 {[...Array(5)].map((_, i) => (

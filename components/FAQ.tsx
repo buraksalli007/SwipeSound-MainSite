@@ -11,7 +11,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-24 px-4 sm:px-6 lg:px-8">
+    <section id="faq" className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-950/30 via-orange-900/20 to-orange-950/30">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-3 gap-12">
           {/* FAQ Section */}
@@ -23,11 +23,11 @@ export default function FAQ() {
               {faqItems.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700 overflow-hidden"
+                  className="bg-gradient-to-br from-orange-900/40 to-orange-800/30 rounded-xl border border-orange-500/20 overflow-hidden"
                 >
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-800/50 transition-colors"
+                    className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-orange-900/30 transition-colors"
                   >
                     <span className="font-semibold text-white pr-4">
                       {item.question}
@@ -50,7 +50,7 @@ export default function FAQ() {
 
           {/* Contact Card */}
           <div className="lg:col-span-1">
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700 sticky top-24">
+            <div className="bg-gradient-to-br from-orange-900/40 to-orange-800/30 rounded-2xl p-8 border border-orange-500/20 sticky top-24">
               <h3 className="text-2xl font-semibold text-white mb-4">
                 Contact & Support
               </h3>
@@ -59,7 +59,7 @@ export default function FAQ() {
               </p>
               <a
                 href="mailto:contact@swipesound.co.uk"
-                className="text-teal-400 hover:text-teal-300 font-medium break-all"
+                className="text-orange-300 hover:text-orange-200 font-medium break-all"
               >
                 contact@swipesound.co.uk
               </a>

@@ -11,7 +11,7 @@ export default function Pricing() {
   };
 
   return (
-    <section id="pricing" className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-900/50">
+    <section id="pricing" className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-900/20 via-orange-800/15 to-orange-900/20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -29,13 +29,13 @@ export default function Pricing() {
               key={index}
               className={`rounded-2xl p-8 border ${
                 plan.highlight
-                  ? "bg-gradient-to-br from-gray-800 to-gray-900 border-teal-500/50 shadow-lg shadow-teal-500/20 scale-105"
-                  : "bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700"
+                  ? "bg-gradient-to-br from-orange-900/50 to-orange-800/40 border-orange-500/50 shadow-lg shadow-orange-900/30 scale-105"
+                  : "bg-gradient-to-br from-orange-900/40 to-orange-800/30 border-orange-500/20"
               }`}
             >
               {plan.highlight && (
                 <div className="mb-4">
-                  <span className="px-3 py-1 rounded-full bg-gradient-to-r from-teal-500 to-blue-600 text-white text-xs font-medium">
+                  <span className="px-3 py-1 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white text-xs font-medium">
                     Recommended for heavy users
                   </span>
                 </div>
@@ -50,7 +50,7 @@ export default function Pricing() {
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start gap-2">
-                    <span className="text-teal-400 mt-1">✓</span>
+                    <span className="text-orange-400 mt-1">✓</span>
                     <span className="text-gray-300">{feature}</span>
                   </li>
                 ))}
@@ -63,8 +63,8 @@ export default function Pricing() {
                   plan.ctaDisabled
                     ? "bg-gray-700 text-gray-400 cursor-not-allowed"
                     : plan.highlight
-                    ? "bg-gradient-to-r from-teal-500 to-blue-600 text-white hover:from-teal-600 hover:to-blue-700 shadow-lg shadow-teal-500/25"
-                    : "border border-gray-600 text-white hover:bg-white/5"
+                    ? "bg-gradient-to-r from-orange-500 to-orange-600 text-white hover:from-orange-600 hover:to-orange-700 shadow-lg shadow-orange-500/25"
+                    : "border border-orange-500/50 text-white hover:bg-orange-500/10"
                 }`}
               >
                 {plan.cta}

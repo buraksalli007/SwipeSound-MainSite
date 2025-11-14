@@ -2,7 +2,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+    <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-orange-500/20 bg-gradient-to-br from-orange-950/50 to-orange-900/40">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Contact */}
@@ -10,7 +10,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Contact</h3>
             <a
               href="mailto:contact@swipesound.co.uk"
-              className="text-gray-400 hover:text-teal-400 text-sm transition-colors block mb-2"
+              className="text-orange-200 hover:text-orange-100 text-sm transition-colors block mb-2"
             >
               contact@swipesound.co.uk
             </a>
@@ -23,7 +23,7 @@ export default function Footer() {
               href="https://instagram.com/swipesound"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-teal-400 text-sm transition-colors block"
+              className="text-orange-200 hover:text-orange-100 text-sm transition-colors block"
             >
               Instagram: @swipesound
             </a>
@@ -35,13 +35,13 @@ export default function Footer() {
             <div className="flex flex-col gap-2">
               <a
                 href="/privacy"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
+                className="text-orange-200 hover:text-white text-sm transition-colors"
               >
                 Privacy
               </a>
               <a
                 href="/terms"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
+                className="text-orange-200 hover:text-white text-sm transition-colors"
               >
                 Terms
               </a>
@@ -49,9 +49,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8">
+          <div className="border-t border-orange-500/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-gray-400 text-sm">
+            <div className="text-orange-200/80 text-sm">
               © {currentYear} SwipeSound. All rights reserved.
             </div>
           </div>
