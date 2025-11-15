@@ -22,17 +22,16 @@ export default function Pricing() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-8">
           {pricingPlans.map((plan, index) => {
             const isSelected = selectedPlan === index;
-            const isHighlight = plan.highlight;
             
             return (
               <div
                 key={index}
                 onClick={() => setSelectedPlan(index)}
-                className={`rounded-2xl p-6 border transition-all cursor-pointer ${
-                  isSelected || isHighlight
-                    ? "bg-gradient-to-br from-orange-900/60 to-orange-800/50 border-orange-500/70 shadow-xl shadow-orange-900/40 scale-105"
-                    : "bg-gradient-to-br from-orange-900/40 to-orange-800/30 border-orange-500/20 hover:border-orange-500/40"
-                }`}
+                className={`rounded-2xl p-6 border cursor-pointer will-change-transform ${
+                  isSelected
+                    ? "bg-gradient-to-br from-orange-900/60 to-orange-800/50 border-orange-500/70 shadow-xl shadow-orange-900/40 scale-105 z-10"
+                    : "bg-gradient-to-br from-orange-900/40 to-orange-800/30 border-orange-500/20 hover:border-orange-500/40 hover:scale-[1.02]"
+                } transition-all duration-300 ease-out`}
               >
                 {plan.badge && (
                   <div className="mb-4">
@@ -76,10 +75,10 @@ export default function Pricing() {
                 <Link
                   href="/pricing"
                   onClick={(e) => e.stopPropagation()}
-                  className={`block w-full px-6 py-3 rounded-full font-semibold text-center transition-all ${
+                  className={`block w-full px-6 py-3 rounded-full font-semibold text-center transition-all duration-300 ease-out ${
                     plan.ctaDisabled
                       ? "bg-gray-700 text-gray-400 cursor-not-allowed"
-                      : isSelected || isHighlight
+                      : isSelected
                       ? "bg-gradient-to-r from-orange-500 to-orange-600 text-white hover:from-orange-600 hover:to-orange-700 shadow-lg shadow-orange-500/25"
                       : "border border-orange-500/50 text-white hover:bg-orange-500/10"
                   }`}
@@ -93,8 +92,8 @@ export default function Pricing() {
 
         {/* Selected Plan Details */}
         {selectedPlan !== null && (
-          <div className="max-w-4xl mx-auto mb-8">
-            <div className="bg-gradient-to-br from-orange-900/50 to-orange-800/40 rounded-2xl p-8 border border-orange-500/50 shadow-lg">
+          <div className="max-w-4xl mx-auto mb-8 animate-fade-in-up">
+            <div className="bg-gradient-to-br from-orange-900/50 to-orange-800/40 rounded-2xl p-8 border border-orange-500/50 shadow-lg transition-all duration-300 ease-out">
               <div className="flex items-start justify-between mb-6">
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-2">
@@ -104,7 +103,7 @@ export default function Pricing() {
                 </div>
                 <button
                   onClick={() => setSelectedPlan(null)}
-                  className="text-orange-300 hover:text-white transition-colors"
+                  className="text-orange-300 hover:text-white transition-colors duration-200 ease-out"
                 >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

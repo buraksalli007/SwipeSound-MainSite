@@ -28,6 +28,39 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Smooth animations for pricing cards and interactions */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Optimize animations for performance */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth transitions for all interactive elements */
+button, a, [role="button"] {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* GPU acceleration for transforms */
+.will-change-transform {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
 /* Hide Vercel branding - Comprehensive */
 footer a[href*="vercel.com"],
 footer a[href*="vercel"],
