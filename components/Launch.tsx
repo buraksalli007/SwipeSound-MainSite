@@ -159,8 +159,6 @@ export default function Launch() {
                   className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-600 text-white focus:outline-none focus:border-teal-500"
                 >
                   <option value="Spotify">Spotify</option>
-                  <option value="Apple Music">Apple Music</option>
-                  <option value="Both">Both</option>
                   <option value="Not sure">Not sure</option>
                 </select>
               </div>

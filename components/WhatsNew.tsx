@@ -39,7 +39,7 @@ export default function WhatsNew() {
               Better Playlist Export
             </h3>
             <p className="text-orange-100 leading-relaxed text-sm">
-              Improved playlist creation and export to Spotify and Apple Music with better reliability and faster sync.
+              Improved playlist creation and export to Spotify with better reliability and faster sync.
             </p>
           </div>
 

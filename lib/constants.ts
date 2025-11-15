@@ -77,7 +77,7 @@ export const faqItems = [
   {
     question: "How does SwipeSound connect to my music?",
     answer:
-      "SwipeSound uses official APIs from Spotify and Apple Music. You'll authenticate through your music provider's secure OAuth flow—we never see or store your password. We only access your liked songs and playlist metadata to help you organize them.",
+      "SwipeSound uses Spotify's official API. You'll authenticate through Spotify's secure OAuth flow—we never see or store your password. We only access your liked songs and playlist metadata to help you organize them.",
   },
   {
     question: "Does SwipeSound change my existing playlists?",
@@ -87,7 +87,7 @@ export const faqItems = [
   {
     question: "Which platforms are supported?",
     answer:
-      "We're launching with Spotify support first, followed by Apple Music. Additional platforms may be added based on user demand and API availability. Join the waitlist to stay updated on platform support.",
+      "SwipeSound currently supports Spotify. Additional platforms may be added based on user demand and API availability. Join the waitlist to stay updated on platform support.",
   },
   {
     question: "Is there a free version?",

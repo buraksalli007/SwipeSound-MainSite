@@ -59,12 +59,12 @@ export default function TermsOfUse() {
                 <li>A swipe-based user interface (similar to Tinder) for organizing your music library</li>
                 <li>Tools to clean up and organize your &ldquo;Liked Songs&rdquo; and playlists</li>
                 <li>Automated playlist creation based on your preferences</li>
-                <li>Integration with Spotify and Apple Music (requires valid accounts with these services)</li>
+                <li>Integration with Spotify (requires a valid Spotify account)</li>
                 <li>Filtering options by mood, genre, energy level, and other criteria</li>
               </ul>
               <p className="text-orange-100 leading-relaxed mt-4">
-                Certain features of SwipeSound require you to connect your Spotify or Apple Music account. You are responsible 
-                for maintaining valid accounts with these third-party services.
+                Certain features of SwipeSound require you to connect your Spotify account. You are responsible 
+                for maintaining a valid Spotify account.
               </p>
             </section>
 
@@ -110,10 +110,9 @@ export default function TermsOfUse() {
                 Third-Party Integrations
               </h2>
               <p className="text-orange-100 leading-relaxed">
-                SwipeSound integrates with Spotify and Apple Music through their official APIs. Your use of these third-party 
-                services is subject to their respective terms of service and privacy policies. SwipeSound is not responsible for 
-                the availability, accuracy, or content of these third-party services. Any issues with Spotify or Apple Music 
-                accounts, playlists, or API availability should be directed to those respective services.
+                SwipeSound integrates with Spotify through their official API. Your use of Spotify is subject to Spotify&apos;s 
+                terms of service and privacy policy. SwipeSound is not responsible for the availability, accuracy, or content of 
+                Spotify&apos;s service. Any issues with your Spotify account, playlists, or API availability should be directed to Spotify.
               </p>
             </section>
 
@@ -130,7 +129,7 @@ export default function TermsOfUse() {
                 <li>The Service will be available at all times or without interruption</li>
                 <li>The Service will be error-free or secure</li>
                 <li>Playlists created through SwipeSound will remain available indefinitely</li>
-                <li>Third-party API integrations (Spotify, Apple Music) will always function correctly</li>
+                <li>Spotify API integration will always function correctly</li>
                 <li>The Service will meet your specific requirements or expectations</li>
               </ul>
               <p className="text-orange-100 leading-relaxed mt-4">

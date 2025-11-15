@@ -57,9 +57,9 @@ export default function PrivacyPolicy() {
                   operating system version) to ensure compatibility and optimize performance.
                 </li>
                 <li>
-                  <strong className="text-white">Music Service Data:</strong> When you connect your Spotify or Apple Music account, 
-                  we access your liked songs and playlist metadata through official APIs. We do not store your music service credentials 
-                  or passwords—authentication is handled securely by Spotify and Apple Music.
+                  <strong className="text-white">Music Service Data:</strong> When you connect your Spotify account, 
+                  we access your liked songs and playlist metadata through Spotify&apos;s official API. We do not store your Spotify credentials 
+                  or passwords—authentication is handled securely by Spotify.
                 </li>
               </ul>
               <p className="text-orange-100 leading-relaxed mt-4">
@@ -172,9 +172,8 @@ export default function PrivacyPolicy() {
                 Third-Party Services
               </h2>
               <p className="text-orange-100 leading-relaxed">
-                SwipeSound integrates with Spotify and Apple Music through their official APIs. Your use of these services 
-                is subject to their respective privacy policies. We encourage you to review Spotify&apos;s and Apple Music&apos;s 
-                privacy policies to understand how they handle your data.
+                SwipeSound integrates with Spotify through their official API. Your use of Spotify is subject to Spotify&apos;s 
+                privacy policy. We encourage you to review Spotify&apos;s privacy policy to understand how they handle your data.
               </p>
             </section>
 

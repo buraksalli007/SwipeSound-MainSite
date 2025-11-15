@@ -3,7 +3,7 @@ export default function HowItWorks() {
     {
       title: "Connect your music account",
       description:
-        "SwipeSound only uses necessary data: liked songs, playlist names, and basic metadata. No access to passwords or payment info. Works with Spotify and Apple Music accounts.",
+        "SwipeSound only uses necessary data: liked songs, playlist names, and basic metadata. No access to passwords or payment info. Works with your Spotify account.",
       icon: "🔗",
     },
     {
