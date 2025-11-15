@@ -2,13 +2,14 @@
 
 import { useState } from "react";
 
-// Placeholder music data - fictional songs with royalty-free cover images from Unsplash
+// Placeholder music data - fictional songs with professional Spotify-style album covers
+// Using high-quality abstract/geometric art from Unsplash (royalty-free, professional quality)
 const sampleSongs = [
   {
     id: 1,
     title: "Sunset Drive",
     artist: "Neon Waves",
-    coverImage: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=400&fit=crop&q=80",
+    coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&h=400&fit=crop&q=90",
     energy: 84,
     mood: "Energetic",
     swipeScore: 92,
@@ -18,7 +19,7 @@ const sampleSongs = [
     id: 2,
     title: "Midnight Pulse",
     artist: "Electric Dreams",
-    coverImage: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&h=400&fit=crop&q=80",
+    coverImage: "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=400&h=400&fit=crop&q=90",
     energy: 67,
     mood: "Calm",
     swipeScore: 78,
@@ -28,7 +29,7 @@ const sampleSongs = [
     id: 3,
     title: "Golden Hour",
     artist: "Amber Fields",
-    coverImage: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=400&h=400&fit=crop&q=80",
+    coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&h=400&fit=crop&q=90",
     energy: 91,
     mood: "Upbeat",
     swipeScore: 95,
@@ -38,7 +39,7 @@ const sampleSongs = [
     id: 4,
     title: "Dusk Vibes",
     artist: "Crimson Sky",
-    coverImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&h=400&fit=crop&q=80",
+    coverImage: "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=400&h=400&fit=crop&q=90",
     energy: 45,
     mood: "Relaxed",
     swipeScore: 65,
@@ -48,7 +49,7 @@ const sampleSongs = [
     id: 5,
     title: "Fire Dance",
     artist: "Orange Glow",
-    coverImage: "https://images.unsplash.com/photo-1514327605112-b887c0e61c0a?w=400&h=400&fit=crop&q=80",
+    coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&h=400&fit=crop&q=90",
     energy: 88,
     mood: "Intense",
     swipeScore: 89,
@@ -58,7 +59,7 @@ const sampleSongs = [
     id: 6,
     title: "Cozy Nights",
     artist: "Warm Tones",
-    coverImage: "https://images.unsplash.com/photo-1516280440619-27b5bb771cc0?w=400&h=400&fit=crop&q=80",
+    coverImage: "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=400&h=400&fit=crop&q=90",
     energy: 52,
     mood: "Chill",
     swipeScore: 72,
@@ -116,12 +117,19 @@ export default function MusicPreview() {
             >
               {/* Cover Art */}
               <div className="relative mb-4">
-                <div className="w-full aspect-square rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-orange-500 to-orange-700">
+                <div className="w-full aspect-square rounded-lg overflow-hidden shadow-xl bg-gradient-to-br from-orange-500/20 to-orange-700/20">
                   <img
                     src={song.coverImage}
                     alt={`${song.title} by ${song.artist}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                     loading="lazy"
+                    onError={(e) => {
+                      // Fallback to gradient if image fails to load
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      target.parentElement!.className = 'w-full aspect-square rounded-lg overflow-hidden shadow-xl bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center';
+                      target.parentElement!.innerHTML = '<div class="text-white/30 text-4xl">♪</div>';
+                    }}
                   />
                 </div>
                 {song.status === "kept" && (

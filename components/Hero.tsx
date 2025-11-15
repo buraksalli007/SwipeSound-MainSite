@@ -83,12 +83,19 @@ export default function Hero() {
                         : "bg-red-500/10 border-red-500/30"
                     }`}
                   >
-                    <div className="w-12 h-12 rounded-lg overflow-hidden bg-gradient-to-br from-orange-500 to-orange-700 flex-shrink-0">
+                    <div className="w-12 h-12 rounded-lg overflow-hidden bg-gradient-to-br from-orange-500/20 to-orange-700/20 flex-shrink-0 shadow-md">
                       <img
                         src={song.coverImage}
                         alt={`${song.title} by ${song.artist}`}
                         className="w-full h-full object-cover"
                         loading="lazy"
+                        onError={(e) => {
+                          // Fallback to gradient if image fails to load
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          target.parentElement!.className = 'w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500 to-orange-700 flex-shrink-0 flex items-center justify-center';
+                          target.parentElement!.innerHTML = '<div class="text-white/30 text-lg">♪</div>';
+                        }}
                       />
                     </div>
                     <div className="flex-1 min-w-0">
