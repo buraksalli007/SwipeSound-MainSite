@@ -97,6 +97,8 @@ export default function Hero() {
                         alt={`${song.title} by ${song.artist}`}
                         className="w-full h-full object-cover"
                         loading="lazy"
+                        crossOrigin="anonymous"
+                        referrerPolicy="no-referrer"
                         onError={(e) => {
                           // Fallback to gradient if image fails to load
                           const target = e.target as HTMLImageElement;

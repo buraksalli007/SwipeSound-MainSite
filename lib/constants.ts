@@ -124,7 +124,7 @@ export const mockSongs = [
     artist: "M83",
     action: "Keep →",
     actionType: "keep" as const,
-    // Real Spotify album cover for M83 - Hurry Up, We're Dreaming
+    // Real Spotify album cover for M83 - Hurry Up, We're Dreaming (640x640)
     coverImage: "https://i.scdn.co/image/ab67616d0000b2734ce8b4e4256c4c0c9b74b376",
   },
   {
@@ -132,7 +132,7 @@ export const mockSongs = [
     artist: "The Weeknd",
     action: "← Remove",
     actionType: "remove" as const,
-    // Real Spotify album cover for The Weeknd - After Hours
+    // Real Spotify album cover for The Weeknd - After Hours (640x640)
     coverImage: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36",
   },
   {
@@ -140,7 +140,7 @@ export const mockSongs = [
     artist: "Dua Lipa",
     action: "Keep →",
     actionType: "keep" as const,
-    // Real Spotify album cover for Dua Lipa - Future Nostalgia
+    // Real Spotify album cover for Dua Lipa - Future Nostalgia (640x640)
     coverImage: "https://i.scdn.co/image/ab67616d0000b2732a038d3bf75d1a23a595e5c0",
   },
 ];

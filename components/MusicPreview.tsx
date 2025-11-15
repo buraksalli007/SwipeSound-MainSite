@@ -4,12 +4,13 @@ import { useState } from "react";
 
 // Real Spotify songs with actual album covers from Spotify's CDN
 // Using real popular tracks with their actual Spotify album artwork
+// All images are 640x640px from Spotify's official CDN
 const sampleSongs = [
   {
     id: 1,
     title: "As It Was",
     artist: "Harry Styles",
-    // Real Spotify album cover for Harry Styles - Harry's House
+    // Real Spotify album cover for Harry Styles - Harry's House (640x640)
     coverImage: "https://i.scdn.co/image/ab67616d0000b2736040effba89b9b00a6f6743a",
     energy: 84,
     mood: "Energetic",
@@ -20,7 +21,7 @@ const sampleSongs = [
     id: 2,
     title: "Watermelon Sugar",
     artist: "Harry Styles",
-    // Real Spotify album cover for Harry Styles - Fine Line
+    // Real Spotify album cover for Harry Styles - Fine Line (640x640)
     coverImage: "https://i.scdn.co/image/ab67616d0000b273e787cffec20aa2a396a61647",
     energy: 67,
     mood: "Calm",
@@ -31,7 +32,7 @@ const sampleSongs = [
     id: 3,
     title: "Good 4 U",
     artist: "Olivia Rodrigo",
-    // Real Spotify album cover for Olivia Rodrigo - SOUR
+    // Real Spotify album cover for Olivia Rodrigo - SOUR (640x640)
     coverImage: "https://i.scdn.co/image/ab67616d0000b27317b3850d758fff5a2301e537",
     energy: 91,
     mood: "Upbeat",
@@ -42,7 +43,7 @@ const sampleSongs = [
     id: 4,
     title: "Stay",
     artist: "The Kid LAROI & Justin Bieber",
-    // Real Spotify album cover for The Kid LAROI - F*CK LOVE 3: OVER YOU
+    // Real Spotify album cover for The Kid LAROI - F*CK LOVE 3: OVER YOU (640x640)
     coverImage: "https://i.scdn.co/image/ab67616d0000b273881d8d8378cd01099babcd44",
     energy: 45,
     mood: "Relaxed",
@@ -53,7 +54,7 @@ const sampleSongs = [
     id: 5,
     title: "Heat Waves",
     artist: "Glass Animals",
-    // Real Spotify album cover for Glass Animals - Dreamland
+    // Real Spotify album cover for Glass Animals - Dreamland (640x640)
     coverImage: "https://i.scdn.co/image/ab67616d0000b273c5649add07e3720f5b5b26c6",
     energy: 88,
     mood: "Intense",
@@ -64,7 +65,7 @@ const sampleSongs = [
     id: 6,
     title: "Blinding Lights",
     artist: "The Weeknd",
-    // Real Spotify album cover for The Weeknd - After Hours
+    // Real Spotify album cover for The Weeknd - After Hours (640x640)
     coverImage: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36",
     energy: 52,
     mood: "Chill",
@@ -123,22 +124,24 @@ export default function MusicPreview() {
             >
               {/* Cover Art - Professional Spotify-style album cover */}
               <div className="relative mb-4">
-                <div className="w-full aspect-square rounded-lg overflow-hidden shadow-2xl bg-gradient-to-br from-orange-500/10 to-orange-700/10 ring-1 ring-orange-500/20">
-                  <img
-                    src={song.coverImage}
-                    alt={`${song.title} by ${song.artist}`}
-                    className="w-full h-full object-cover transition-all duration-300 hover:scale-110"
-                    loading="lazy"
-                    onError={(e) => {
-                      // Fallback to gradient if image fails to load
-                      const target = e.target as HTMLImageElement;
-                      target.style.display = 'none';
-                      const parent = target.parentElement!;
-                      parent.className = 'w-full aspect-square rounded-lg overflow-hidden shadow-2xl bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center ring-1 ring-orange-500/20';
-                      parent.innerHTML = '<div class="text-white/30 text-4xl">♪</div>';
-                    }}
-                  />
-                </div>
+                    <div className="w-full aspect-square rounded-lg overflow-hidden shadow-2xl bg-gradient-to-br from-orange-500/10 to-orange-700/10 ring-1 ring-orange-500/20">
+                      <img
+                        src={song.coverImage}
+                        alt={`${song.title} by ${song.artist}`}
+                        className="w-full h-full object-cover transition-all duration-300 hover:scale-110"
+                        loading="lazy"
+                        crossOrigin="anonymous"
+                        referrerPolicy="no-referrer"
+                        onError={(e) => {
+                          // Fallback to gradient if image fails to load
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          const parent = target.parentElement!;
+                          parent.className = 'w-full aspect-square rounded-lg overflow-hidden shadow-2xl bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center ring-1 ring-orange-500/20';
+                          parent.innerHTML = '<div class="text-white/30 text-4xl">♪</div>';
+                        }}
+                      />
+                    </div>
                 {song.status === "kept" && (
                   <div className="absolute top-2 right-2 bg-green-500/80 text-white text-xs px-2 py-1 rounded-full font-medium">
                     ✓ Kept
