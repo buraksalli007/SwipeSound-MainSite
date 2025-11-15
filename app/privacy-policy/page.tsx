@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 export default function PrivacyPolicy() {
   const lastUpdated = "November 14, 2025";
@@ -209,6 +210,19 @@ export default function PrivacyPolicy() {
               </p>
             </section>
           </div>
+        </div>
+
+        {/* Back to Homepage */}
+        <div className="text-center mt-12">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold hover:from-orange-600 hover:to-orange-700 shadow-lg shadow-orange-500/25 transition-all"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            Back to Homepage
+          </Link>
         </div>
       </article>
       <Footer />
