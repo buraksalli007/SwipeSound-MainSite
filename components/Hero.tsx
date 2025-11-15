@@ -83,7 +83,14 @@ export default function Hero() {
                         : "bg-red-500/10 border-red-500/30"
                     }`}
                   >
-                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500 to-orange-700 flex-shrink-0" />
+                    <div className="w-12 h-12 rounded-lg overflow-hidden bg-gradient-to-br from-orange-500 to-orange-700 flex-shrink-0">
+                      <img
+                        src={song.coverImage}
+                        alt={`${song.title} by ${song.artist}`}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                    </div>
                     <div className="flex-1 min-w-0">
                       <div className="text-white font-semibold truncate">
                         {song.title}

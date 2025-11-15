@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 
-// Placeholder music data - fictional songs with orange-themed covers
+// Placeholder music data - fictional songs with royalty-free cover images from Unsplash
 const sampleSongs = [
   {
     id: 1,
     title: "Sunset Drive",
     artist: "Neon Waves",
-    cover: "gradient-orange-1",
+    coverImage: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=400&fit=crop&q=80",
     energy: 84,
     mood: "Energetic",
     swipeScore: 92,
@@ -18,7 +18,7 @@ const sampleSongs = [
     id: 2,
     title: "Midnight Pulse",
     artist: "Electric Dreams",
-    cover: "gradient-orange-2",
+    coverImage: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&h=400&fit=crop&q=80",
     energy: 67,
     mood: "Calm",
     swipeScore: 78,
@@ -28,7 +28,7 @@ const sampleSongs = [
     id: 3,
     title: "Golden Hour",
     artist: "Amber Fields",
-    cover: "gradient-orange-3",
+    coverImage: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=400&h=400&fit=crop&q=80",
     energy: 91,
     mood: "Upbeat",
     swipeScore: 95,
@@ -38,7 +38,7 @@ const sampleSongs = [
     id: 4,
     title: "Dusk Vibes",
     artist: "Crimson Sky",
-    cover: "gradient-orange-4",
+    coverImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&h=400&fit=crop&q=80",
     energy: 45,
     mood: "Relaxed",
     swipeScore: 65,
@@ -48,7 +48,7 @@ const sampleSongs = [
     id: 5,
     title: "Fire Dance",
     artist: "Orange Glow",
-    cover: "gradient-orange-5",
+    coverImage: "https://images.unsplash.com/photo-1514327605112-b887c0e61c0a?w=400&h=400&fit=crop&q=80",
     energy: 88,
     mood: "Intense",
     swipeScore: 89,
@@ -58,26 +58,13 @@ const sampleSongs = [
     id: 6,
     title: "Cozy Nights",
     artist: "Warm Tones",
-    cover: "gradient-orange-6",
+    coverImage: "https://images.unsplash.com/photo-1516280440619-27b5bb771cc0?w=400&h=400&fit=crop&q=80",
     energy: 52,
     mood: "Chill",
     swipeScore: 72,
     status: "kept",
   },
 ];
-
-// Generate orange gradient covers
-const getCoverGradient = (index: number) => {
-  const gradients = [
-    "bg-gradient-to-br from-orange-500 to-orange-700",
-    "bg-gradient-to-br from-orange-400 to-orange-600",
-    "bg-gradient-to-br from-orange-600 to-orange-800",
-    "bg-gradient-to-br from-orange-300 to-orange-500",
-    "bg-gradient-to-br from-orange-500 via-orange-600 to-orange-800",
-    "bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700",
-  ];
-  return gradients[index % gradients.length];
-};
 
 export default function MusicPreview() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -129,12 +116,13 @@ export default function MusicPreview() {
             >
               {/* Cover Art */}
               <div className="relative mb-4">
-                <div
-                  className={`w-full aspect-square rounded-lg ${getCoverGradient(
-                    index
-                  )} flex items-center justify-center shadow-lg`}
-                >
-                  <div className="text-white/20 text-4xl">♪</div>
+                <div className="w-full aspect-square rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-orange-500 to-orange-700">
+                  <img
+                    src={song.coverImage}
+                    alt={`${song.title} by ${song.artist}`}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
                 {song.status === "kept" && (
                   <div className="absolute top-2 right-2 bg-green-500/80 text-white text-xs px-2 py-1 rounded-full font-medium">
