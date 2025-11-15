@@ -30,32 +30,40 @@ export default function Hero() {
 
             <div className="inline-block">
               <span className="px-4 py-2 rounded-full bg-gradient-to-r from-orange-500/20 to-orange-600/20 border border-orange-500/30 text-orange-300 text-sm font-medium">
-                Organize your liked songs in minutes
+                Discover. Curate. Share. Together.
               </span>
             </div>
 
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              Clean up your liked songs and build smart playlists with a swipe.
+              The Social Way to Clean Up Your Music
             </h2>
 
             <p className="text-xl text-orange-100 leading-relaxed max-w-2xl">
-              SwipeSound helps you clean up your &ldquo;Liked Songs&rdquo; and old playlists
-              with an intuitive swipe-based interface. Build fresh, curated
-              playlists quickly—just like Tinder, but for your music library.
+              SwipeSound is a social music intelligence platform. Swipe through your songs, 
+              build playlists instantly, share your stats with the community, and discover 
+              what others keep or remove. Join thousands of listeners shaping the future of 
+              music discovery.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={() => scrollToSection("launch")}
-                className="px-8 py-4 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold hover:from-orange-600 hover:to-orange-700 transition-all shadow-lg shadow-orange-500/25"
+                className="px-8 py-4 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-300 ease-out shadow-lg shadow-orange-500/25"
               >
-                Join the Waitlist
+                Join the Community
               </button>
               <button
-                onClick={() => scrollToSection("features")}
-                className="px-8 py-4 rounded-full border border-orange-500/50 text-white font-semibold hover:bg-orange-500/10 transition-all"
+                onClick={() => {
+                  const element = document.getElementById("community-preview");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  } else {
+                    window.location.href = "/community";
+                  }
+                }}
+                className="px-8 py-4 rounded-full border border-orange-500/50 text-white font-semibold hover:bg-orange-500/10 transition-all duration-300 ease-out"
               >
-                Learn More
+                Explore Community
               </button>
             </div>
 

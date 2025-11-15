@@ -25,12 +25,12 @@ export default function HowItWorks() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Clean, organize and rebuild your playlists with intent.
+            Clean, Organize, and Share Your Music Journey
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            SwipeSound breaks down huge, messy libraries into small swipe
-            sessions and then auto-builds curated playlists based on your
-            preferences.
+          <p className="text-xl text-orange-100 max-w-3xl mx-auto">
+            SwipeSound breaks down huge, messy libraries into small swipe sessions, 
+            auto-builds curated playlists, and lets you share your music insights with 
+            a global community—all while keeping your data private and anonymous.
           </p>
         </div>
 
@@ -38,7 +38,7 @@ export default function HowItWorks() {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-orange-900/40 to-orange-800/30 rounded-2xl p-8 border border-orange-500/20 hover:border-orange-500/50 transition-all"
+              className="bg-gradient-to-br from-orange-900/40 to-orange-800/30 rounded-2xl p-8 border border-orange-500/20 hover:border-orange-500/50 transition-all duration-300 ease-out"
             >
               <div className="text-4xl mb-4">{step.icon}</div>
               <h3 className="text-2xl font-semibold text-white mb-3">

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -46,28 +47,34 @@ export default function Navbar() {
           </div>
 
           {/* Navigation Links */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             <button
               onClick={() => scrollToSection("about")}
-              className="text-gray-300 hover:text-white transition-colors text-sm font-medium"
+              className="text-gray-300 hover:text-white transition-colors duration-200 ease-out text-sm font-medium"
             >
               How It Works
             </button>
             <button
               onClick={() => scrollToSection("features")}
-              className="text-gray-300 hover:text-white transition-colors text-sm font-medium"
+              className="text-gray-300 hover:text-white transition-colors duration-200 ease-out text-sm font-medium"
             >
               Features
             </button>
+            <Link
+              href="/community"
+              className="text-gray-300 hover:text-white transition-colors duration-200 ease-out text-sm font-medium"
+            >
+              Community
+            </Link>
             <button
               onClick={() => scrollToSection("pricing")}
-              className="text-gray-300 hover:text-white transition-colors text-sm font-medium"
+              className="text-gray-300 hover:text-white transition-colors duration-200 ease-out text-sm font-medium"
             >
               Pricing
             </button>
             <button
               onClick={() => scrollToSection("faq")}
-              className="text-gray-300 hover:text-white transition-colors text-sm font-medium"
+              className="text-gray-300 hover:text-white transition-colors duration-200 ease-out text-sm font-medium"
             >
               FAQ
             </button>

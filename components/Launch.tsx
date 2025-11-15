@@ -28,9 +28,9 @@ export default function Launch() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Launch & roadmap
           </h2>
-          <p className="text-xl text-gray-300">
-            SwipeSound is currently under active development. We&apos;ll have a
-            TestFlight / beta phase before public App Store launch.
+          <p className="text-xl text-orange-100">
+            SwipeSound is currently under active development. Join the community 
+            to be among the first to experience social music discovery and share your insights.
           </p>
         </div>
 

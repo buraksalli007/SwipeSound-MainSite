@@ -1,40 +1,40 @@
 export default function Features() {
   const features = [
     {
-      title: "Swipe-based UI",
+      title: "Advanced Stats",
       description:
-        "Keep or remove songs with simple left/right swipes. Just like Tinder, but for your music library. Fast, intuitive, and fun.",
+        "Get deep insights into your listening habits: kept percentage, energy levels, genre breakdowns, and more. Understand your music taste like never before.",
+      icon: "📊",
+    },
+    {
+      title: "Community Feed",
+      description:
+        "Explore anonymized user stats cards, trending genres, and rising tracks. See how others discover music and discover patterns in collective listening behavior.",
+      icon: "👥",
+    },
+    {
+      title: "Top Genres Weekly",
+      description:
+        "Stay updated with weekly genre trends from the community. See what's rising, what's popular, and discover new music through collective intelligence.",
+      icon: "🔥",
+    },
+    {
+      title: "Swipe-to-Clean",
+      description:
+        "Keep or remove songs with simple left/right swipes. Fast, intuitive, and fun—just like Tinder, but for your music library.",
       icon: "👆",
     },
     {
-      title: "Smart Filtering",
+      title: "Your Music, Your Way",
       description:
-        "Filter by mood, genre, energy level, release date, and more. Find exactly what you're looking for in seconds.",
+        "Filter by mood, genre, energy level, release date, and more. Build playlists instantly and sync them directly to your Spotify account.",
       icon: "🎯",
     },
     {
-      title: "One-tap Playlist Building",
+      title: "Autoplaylists",
       description:
-        "Create curated playlists instantly. Swipe right to add songs to playlists like 'Gym Mix', 'Study Focus', or 'Chill Vibes'.",
+        "Create curated playlists automatically based on your swipes. Generate 'Gym Mix', 'Study Focus', 'Chill Vibes' and more with one tap.",
       icon: "⚡",
-    },
-    {
-      title: "Library Cleanup",
-      description:
-        "Declutter your 'Liked Songs' and old playlists. Remove songs you no longer listen to and organize your collection.",
-      icon: "🧹",
-    },
-    {
-      title: "Smart Suggestions",
-      description:
-        "Get intelligent recommendations based on your swiping patterns. Discover new music that matches your taste.",
-      icon: "✨",
-    },
-    {
-      title: "Batch Processing",
-      description:
-        "Review hundreds of songs quickly. Process large playlists in small, manageable batches without feeling overwhelmed.",
-      icon: "📦",
     },
   ];
 
@@ -43,11 +43,11 @@ export default function Features() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Powerful features for music lovers
+            Powerful Features for Music Discovery
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Everything you need to organize your music library and build perfect
-            playlists faster than ever.
+          <p className="text-xl text-orange-100 max-w-3xl mx-auto">
+            Everything you need to organize your music library, discover new tracks, 
+            and connect with a global community of music lovers.
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export default function Features() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-orange-900/40 to-orange-800/30 rounded-2xl p-6 border border-orange-500/20 hover:border-orange-500/50 transition-all"
+              className="bg-gradient-to-br from-orange-900/40 to-orange-800/30 rounded-2xl p-6 border border-orange-500/20 hover:border-orange-500/50 transition-all duration-300 ease-out"
             >
               <div className="text-4xl mb-4">{feature.icon}</div>
               <h3 className="text-xl font-semibold text-white mb-3">
