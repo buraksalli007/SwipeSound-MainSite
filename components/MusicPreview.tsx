@@ -43,7 +43,7 @@ const sampleSongs = [
     id: 4,
     title: "Stay",
     artist: "The Kid LAROI & Justin Bieber",
-    // Real Spotify album cover for The Kid LAROI - F*CK LOVE 3: OVER YOU (640x640)
+    // Real Spotify album cover for Stay - F*CK LOVE 3
     coverImage: "https://i.scdn.co/image/ab67616d0000b273881d8d8378cd01099babcd44",
     energy: 45,
     mood: "Relaxed",
@@ -54,7 +54,7 @@ const sampleSongs = [
     id: 5,
     title: "Heat Waves",
     artist: "Glass Animals",
-    // Real Spotify album cover for Glass Animals - Dreamland (640x640)
+    // Real Spotify album cover for Glass Animals - Dreamland
     coverImage: "https://i.scdn.co/image/ab67616d0000b273c5649add07e3720f5b5b26c6",
     energy: 88,
     mood: "Intense",
@@ -89,25 +89,25 @@ export default function MusicPreview() {
           </p>
         </div>
 
-        {/* Stats Overview */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-orange-900/40 to-orange-800/30 rounded-xl p-6 border border-orange-500/20 text-center">
-            <div className="text-3xl font-bold text-white mb-1">247</div>
-            <div className="text-sm text-orange-200">Songs Reviewed</div>
-          </div>
-          <div className="bg-gradient-to-br from-orange-900/40 to-orange-800/30 rounded-xl p-6 border border-orange-500/20 text-center">
-            <div className="text-3xl font-bold text-white mb-1">68%</div>
-            <div className="text-sm text-orange-200">Kept</div>
-          </div>
-          <div className="bg-gradient-to-br from-orange-900/40 to-orange-800/30 rounded-xl p-6 border border-orange-500/20 text-center">
-            <div className="text-3xl font-bold text-white mb-1">8</div>
-            <div className="text-sm text-orange-200">Playlists Built</div>
-          </div>
-          <div className="bg-gradient-to-br from-orange-900/40 to-orange-800/30 rounded-xl p-6 border border-orange-500/20 text-center">
-            <div className="text-3xl font-bold text-white mb-1">84</div>
-            <div className="text-sm text-orange-200">Avg Energy</div>
-          </div>
-        </div>
+            {/* Stats Overview */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-4xl mx-auto">
+              <div className="bg-gradient-to-br from-orange-900/40 to-orange-800/30 rounded-xl p-6 border border-orange-500/20 text-center">
+                <div className="text-3xl font-bold text-white mb-1">184</div>
+                <div className="text-sm text-orange-200">Songs Reviewed</div>
+              </div>
+              <div className="bg-gradient-to-br from-orange-900/40 to-orange-800/30 rounded-xl p-6 border border-orange-500/20 text-center">
+                <div className="text-3xl font-bold text-white mb-1">68%</div>
+                <div className="text-sm text-orange-200">Kept</div>
+              </div>
+              <div className="bg-gradient-to-br from-orange-900/40 to-orange-800/30 rounded-xl p-6 border border-orange-500/20 text-center">
+                <div className="text-3xl font-bold text-white mb-1">5</div>
+                <div className="text-sm text-orange-200">Playlists Built</div>
+              </div>
+              <div className="bg-gradient-to-br from-orange-900/40 to-orange-800/30 rounded-xl p-6 border border-orange-500/20 text-center">
+                <div className="text-3xl font-bold text-white mb-1">78</div>
+                <div className="text-sm text-orange-200">Avg Energy</div>
+              </div>
+            </div>
 
         {/* Music Cards Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">

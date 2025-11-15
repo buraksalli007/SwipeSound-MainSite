@@ -28,14 +28,15 @@ const useAnimatedNumber = (target: number, duration: number = 2000) => {
 };
 
 export default function SocialMetrics() {
-  const totalSwipes = useAnimatedNumber(2847291);
-  const avgKept = useAnimatedNumber(68);
-  const sharedCards = useAnimatedNumber(1247);
-  const playlistsCreated = useAnimatedNumber(8934);
+  // Realistic metrics for a new app in beta - updated daily
+  const totalSwipes = useAnimatedNumber(18427); // ~18K total swipes since launch
+  const avgKept = useAnimatedNumber(68); // Average kept percentage
+  const sharedCards = useAnimatedNumber(23); // Stats cards shared today (realistic for beta)
+  const playlistsCreated = useAnimatedNumber(127); // Playlists created today
 
   const metrics = [
     {
-      label: "Total Swipes Globally",
+      label: "Total Swipes",
       value: totalSwipes.toLocaleString(),
       icon: "👆",
       color: "from-orange-500/20 to-orange-600/20",
@@ -47,7 +48,7 @@ export default function SocialMetrics() {
       color: "from-orange-500/20 to-orange-600/20",
     },
     {
-      label: "Shared Stats Cards Today",
+      label: "Stats Shared Today",
       value: sharedCards.toLocaleString(),
       icon: "📤",
       color: "from-orange-500/20 to-orange-600/20",

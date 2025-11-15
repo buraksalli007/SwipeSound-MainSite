@@ -132,17 +132,17 @@ export default function Hero() {
               {/* Metrics Block */}
               <div className="grid grid-cols-3 gap-4 pt-6 border-t border-orange-500/20">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-white">247</div>
+                  <div className="text-2xl font-bold text-white">156</div>
                   <div className="text-xs text-orange-200">
                     Songs reviewed
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-white">8</div>
+                  <div className="text-2xl font-bold text-white">4</div>
                   <div className="text-xs text-orange-200">Playlists built</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-white">34%</div>
+                  <div className="text-2xl font-bold text-white">42%</div>
                   <div className="text-xs text-orange-200">Clutter reduced</div>
                 </div>
               </div>

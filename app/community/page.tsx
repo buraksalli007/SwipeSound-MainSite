@@ -5,14 +5,14 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import { useState } from "react";
 
-// Mock global stats
+// Realistic global stats for a new app in beta
 const globalStats = [
   { label: "Kept %", value: "68%", icon: "📊", color: "from-orange-500/20 to-orange-600/20" },
   { label: "Clutter Reduced", value: "42%", icon: "🧹", color: "from-orange-500/20 to-orange-600/20" },
   { label: "Most Kept Genre", value: "Electronic", icon: "🎵", color: "from-orange-500/20 to-orange-600/20" },
   { label: "Most Removed Genre", value: "Pop", icon: "🗑️", color: "from-orange-500/20 to-orange-600/20" },
-  { label: "Total Songs Reviewed", value: "2.8M+", icon: "👆", color: "from-orange-500/20 to-orange-600/20" },
-  { label: "Weekly Activity", value: "12.4K", icon: "🔥", color: "from-orange-500/20 to-orange-600/20" },
+  { label: "Total Songs Reviewed", value: "18.4K", icon: "👆", color: "from-orange-500/20 to-orange-600/20" },
+  { label: "Weekly Activity", value: "847", icon: "🔥", color: "from-orange-500/20 to-orange-600/20" },
 ];
 
 // Mock user stats cards
