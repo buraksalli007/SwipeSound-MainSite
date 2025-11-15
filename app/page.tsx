@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import Features from "@/components/Features";
+import WhatsNew from "@/components/WhatsNew";
 import MusicPreview from "@/components/MusicPreview";
 import Testimonials from "@/components/Testimonials";
 import Launch from "@/components/Launch";
@@ -15,6 +16,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
+      <WhatsNew />
       <HowItWorks />
       <Features />
       <MusicPreview />
