@@ -34,16 +34,16 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Legal</h3>
             <div className="flex flex-col gap-2">
               <a
-                href="/privacy"
+                href="/privacy-policy"
                 className="text-orange-200 hover:text-white text-sm transition-colors"
               >
-                Privacy
+                Privacy Policy
               </a>
               <a
-                href="/terms"
+                href="/terms-of-use"
                 className="text-orange-200 hover:text-white text-sm transition-colors"
               >
-                Terms
+                Terms of Use
               </a>
             </div>
           </div>
