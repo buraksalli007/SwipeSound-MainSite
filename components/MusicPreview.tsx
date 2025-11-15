@@ -4,6 +4,8 @@ import { useState } from "react";
 
 // Placeholder music data - fictional songs with professional Spotify-style album covers
 // Using high-quality abstract/geometric art from Unsplash (royalty-free, professional quality)
+// Each cover is unique and professionally designed, similar to real Spotify album artwork
+// All images are 1:1 aspect ratio, high quality (q=90), optimized for web
 const sampleSongs = [
   {
     id: 1,
@@ -115,20 +117,21 @@ export default function MusicPreview() {
                   : "border-orange-500/20"
               }`}
             >
-              {/* Cover Art */}
+              {/* Cover Art - Professional Spotify-style album cover */}
               <div className="relative mb-4">
-                <div className="w-full aspect-square rounded-lg overflow-hidden shadow-xl bg-gradient-to-br from-orange-500/20 to-orange-700/20">
+                <div className="w-full aspect-square rounded-lg overflow-hidden shadow-2xl bg-gradient-to-br from-orange-500/10 to-orange-700/10 ring-1 ring-orange-500/20">
                   <img
                     src={song.coverImage}
                     alt={`${song.title} by ${song.artist}`}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    className="w-full h-full object-cover transition-all duration-300 hover:scale-110"
                     loading="lazy"
                     onError={(e) => {
                       // Fallback to gradient if image fails to load
                       const target = e.target as HTMLImageElement;
                       target.style.display = 'none';
-                      target.parentElement!.className = 'w-full aspect-square rounded-lg overflow-hidden shadow-xl bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center';
-                      target.parentElement!.innerHTML = '<div class="text-white/30 text-4xl">♪</div>';
+                      const parent = target.parentElement!;
+                      parent.className = 'w-full aspect-square rounded-lg overflow-hidden shadow-2xl bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center ring-1 ring-orange-500/20';
+                      parent.innerHTML = '<div class="text-white/30 text-4xl">♪</div>';
                     }}
                   />
                 </div>
