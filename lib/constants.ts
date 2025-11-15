@@ -117,27 +117,28 @@ export const faqItems = [
 ];
 
 // Mock songs for hero preview with professional Spotify-style album covers
+// Each song has a unique, professional cover image
 export const mockSongs = [
   {
     title: "Midnight City",
     artist: "M83",
     action: "Keep →",
     actionType: "keep" as const,
-    coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=200&h=200&fit=crop&q=90",
+    coverImage: "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=200&h=200&fit=crop&q=90",
   },
   {
     title: "Blinding Lights",
     artist: "The Weeknd",
     action: "← Remove",
     actionType: "remove" as const,
-    coverImage: "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=200&h=200&fit=crop&q=90",
+    coverImage: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=200&h=200&fit=crop&q=90",
   },
   {
     title: "Levitating",
     artist: "Dua Lipa",
     action: "Keep →",
     actionType: "keep" as const,
-    coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=200&h=200&fit=crop&q=90",
+    coverImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=200&h=200&fit=crop&q=90",
   },
 ];
 
