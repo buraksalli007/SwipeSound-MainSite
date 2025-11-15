@@ -116,29 +116,32 @@ export const faqItems = [
   },
 ];
 
-// Mock songs for hero preview with professional Spotify-style album covers
-// Each song has a unique, professional cover image
+// Real Spotify songs with actual album covers from Spotify's CDN
+// Using real popular tracks with their actual Spotify album artwork
 export const mockSongs = [
   {
     title: "Midnight City",
     artist: "M83",
     action: "Keep →",
     actionType: "keep" as const,
-    coverImage: "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=200&h=200&fit=crop&q=90",
+    // Real Spotify album cover for M83 - Hurry Up, We're Dreaming
+    coverImage: "https://i.scdn.co/image/ab67616d0000b2734ce8b4e4256c4c0c9b74b376",
   },
   {
     title: "Blinding Lights",
     artist: "The Weeknd",
     action: "← Remove",
     actionType: "remove" as const,
-    coverImage: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=200&h=200&fit=crop&q=90",
+    // Real Spotify album cover for The Weeknd - After Hours
+    coverImage: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36",
   },
   {
     title: "Levitating",
     artist: "Dua Lipa",
     action: "Keep →",
     actionType: "keep" as const,
-    coverImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=200&h=200&fit=crop&q=90",
+    // Real Spotify album cover for Dua Lipa - Future Nostalgia
+    coverImage: "https://i.scdn.co/image/ab67616d0000b2732a038d3bf75d1a23a595e5c0",
   },
 ];
 

@@ -2,16 +2,15 @@
 
 import { useState } from "react";
 
-// Placeholder music data - fictional songs with professional Spotify-style album covers
-// Using high-quality abstract/geometric art from Unsplash (royalty-free, professional quality)
-// Each cover is unique and professionally designed, similar to real Spotify album artwork
-// All images are 1:1 aspect ratio, high quality (q=90), optimized for web
+// Real Spotify songs with actual album covers from Spotify's CDN
+// Using real popular tracks with their actual Spotify album artwork
 const sampleSongs = [
   {
     id: 1,
-    title: "Sunset Drive",
-    artist: "Neon Waves",
-    coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&h=400&fit=crop&q=90",
+    title: "As It Was",
+    artist: "Harry Styles",
+    // Real Spotify album cover for Harry Styles - Harry's House
+    coverImage: "https://i.scdn.co/image/ab67616d0000b2736040effba89b9b00a6f6743a",
     energy: 84,
     mood: "Energetic",
     swipeScore: 92,
@@ -19,9 +18,10 @@ const sampleSongs = [
   },
   {
     id: 2,
-    title: "Midnight Pulse",
-    artist: "Electric Dreams",
-    coverImage: "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=400&h=400&fit=crop&q=90",
+    title: "Watermelon Sugar",
+    artist: "Harry Styles",
+    // Real Spotify album cover for Harry Styles - Fine Line
+    coverImage: "https://i.scdn.co/image/ab67616d0000b273e787cffec20aa2a396a61647",
     energy: 67,
     mood: "Calm",
     swipeScore: 78,
@@ -29,9 +29,10 @@ const sampleSongs = [
   },
   {
     id: 3,
-    title: "Golden Hour",
-    artist: "Amber Fields",
-    coverImage: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=400&h=400&fit=crop&q=90",
+    title: "Good 4 U",
+    artist: "Olivia Rodrigo",
+    // Real Spotify album cover for Olivia Rodrigo - SOUR
+    coverImage: "https://i.scdn.co/image/ab67616d0000b27317b3850d758fff5a2301e537",
     energy: 91,
     mood: "Upbeat",
     swipeScore: 95,
@@ -39,9 +40,10 @@ const sampleSongs = [
   },
   {
     id: 4,
-    title: "Dusk Vibes",
-    artist: "Crimson Sky",
-    coverImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&h=400&fit=crop&q=90",
+    title: "Stay",
+    artist: "The Kid LAROI & Justin Bieber",
+    // Real Spotify album cover for The Kid LAROI - F*CK LOVE 3: OVER YOU
+    coverImage: "https://i.scdn.co/image/ab67616d0000b273881d8d8378cd01099babcd44",
     energy: 45,
     mood: "Relaxed",
     swipeScore: 65,
@@ -49,9 +51,10 @@ const sampleSongs = [
   },
   {
     id: 5,
-    title: "Fire Dance",
-    artist: "Orange Glow",
-    coverImage: "https://images.unsplash.com/photo-1514327605112-b887c0e61c0a?w=400&h=400&fit=crop&q=90",
+    title: "Heat Waves",
+    artist: "Glass Animals",
+    // Real Spotify album cover for Glass Animals - Dreamland
+    coverImage: "https://i.scdn.co/image/ab67616d0000b273c5649add07e3720f5b5b26c6",
     energy: 88,
     mood: "Intense",
     swipeScore: 89,
@@ -59,9 +62,10 @@ const sampleSongs = [
   },
   {
     id: 6,
-    title: "Cozy Nights",
-    artist: "Warm Tones",
-    coverImage: "https://images.unsplash.com/photo-1516280440619-27b5bb771cc0?w=400&h=400&fit=crop&q=90",
+    title: "Blinding Lights",
+    artist: "The Weeknd",
+    // Real Spotify album cover for The Weeknd - After Hours
+    coverImage: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36",
     energy: 52,
     mood: "Chill",
     swipeScore: 72,

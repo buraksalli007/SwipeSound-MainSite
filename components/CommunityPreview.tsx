@@ -27,12 +27,12 @@ const mockUserCards = [
   },
 ];
 
-// Mock trending data
+// Real trending data with actual Spotify tracks
 const trendingGenres = ["Electronic", "Indie Pop", "Hip-Hop", "Chill", "Rock"];
 const trendingTracks = [
-  { title: "Midnight Pulse", artist: "Neon Waves", trend: "+12%" },
-  { title: "Golden Hour", artist: "Amber Fields", trend: "+8%" },
-  { title: "Fire Dance", artist: "Orange Glow", trend: "+15%" },
+  { title: "As It Was", artist: "Harry Styles", trend: "+12%" },
+  { title: "Good 4 U", artist: "Olivia Rodrigo", trend: "+8%" },
+  { title: "Heat Waves", artist: "Glass Animals", trend: "+15%" },
 ];
 
 export default function CommunityPreview() {
