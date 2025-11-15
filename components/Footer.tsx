@@ -86,7 +86,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Legal</h3>
             <div className="flex flex-col gap-2">
               <Link
-                href="/privacy-policy"
+                href="/privacy"
                 className="text-orange-200 hover:text-white text-sm transition-colors duration-200 ease-out"
               >
                 Privacy Policy
